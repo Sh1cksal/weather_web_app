@@ -1,0 +1,135 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #646464;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 8fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    }
+    
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+
+.card{
+    /* background: #000000d0; */
+    background: rgb(255, 153, 102,0.5);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(255, 94, 98,0.5), rgb(255, 153, 102,0.5));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(255, 94, 98,0.5), rgb(255, 153, 102,0.5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem;
+}
+
+.busqueda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.busqueda button{
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.busqueda button:hover{
+    color:#b8b7b7f5;
+}
+
+.search_bar{
+    border: none;
+    outline: none;
+    padding: .4rem 1rem;
+    border-radius: 16px;
+    background: #ffffff2f;
+    color: #fff;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 200px);
+}
+
+.error{
+    font-size: 0.7rem;
+    margin: .5rem 0 0 0;
+    display: none;
+}
+
+/** placeholder styles */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+    text-align: center;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+    text-align: center;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+    text-align: center;
+  }
+
+.temp{
+    font-size: 4rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    height: 35%;
+    margin: 0;
+}
+
+.div2, .div3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.datos1{
+    text-align: end;
+}
+
+.descripcion{
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+
+.datos2{
+    text-align: end;
+    padding: 1rem .2rem;
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
